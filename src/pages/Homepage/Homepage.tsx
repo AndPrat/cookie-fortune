@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { cookiePhrases } from "../../dataCookiePhrases/dataCookiePhrases";
+import Button from "../../components/Button/Button";
 
 const HomePage = (): React.ReactElement => {
   const [phrase, setPhrase] = useState("");
@@ -39,9 +40,9 @@ const HomePage = (): React.ReactElement => {
         </button>
       </div>
       <p className="read-the-docs">
-        <button onClick={() => closeCookie()}>
+        <Button onClick={() => closeCookie()}>
           CIERRA GALLETA - Clicka para coger otra galleta de la fortuna
-        </button>
+        </Button>
       </p>
     </>
   );
