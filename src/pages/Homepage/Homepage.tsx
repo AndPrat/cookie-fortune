@@ -1,8 +1,7 @@
 import { useState } from "react";
-import "./App.css";
-import { cookiePhrases } from "./dataCookiePhrases/dataCookiePhrases";
+import { cookiePhrases } from "../../dataCookiePhrases/dataCookiePhrases";
 
-function App() {
+const HomePage = (): React.ReactElement => {
   const [phrase, setPhrase] = useState("");
 
   const [cookieOpen, setCookieOpen] = useState(false);
@@ -46,6 +45,6 @@ function App() {
       </p>
     </>
   );
-}
+};
 
-export default App;
+export default HomePage;
